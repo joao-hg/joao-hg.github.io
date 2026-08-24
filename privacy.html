@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="tiktok-developers-site-verification" content="fIzUctBL0y7Q76Jdll0JoIiehRDIxt3O">
+<meta name="tiktok-developers-site-verification" content="tiktok-developers-site-verification=fIzUctBL0y7Q76Jdll0JoIiehRDIxt3O">
+<title>Privacy Policy — Shorts Factory</title>
+<link rel="icon" href="assets/app-icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="upd">Shorts Factory · Last updated: 24 August 2026</p>
+
+  <p>Shorts Factory ("the App") is a self-hosted application operated by a single person on
+  their own computer or server. There is no hosted service, no public sign-up, and no central
+  database operated by the developer. This policy describes what the App stores on the
+  operator's own machine and what it sends to third-party platforms.</p>
+
+  <h2>1. Who controls the data</h2>
+  <p>The person who installs and runs the App is the sole controller of all data it holds. The
+  developer of the App does not receive, host, or have access to any of it.</p>
+
+  <h2>2. What the App stores</h2>
+  <div class="card">
+    <ul>
+      <li><b>Content produced by the operator</b> — video ideas, scripts, narration audio,
+        subtitles, rendered video files, titles, descriptions and hashtags.</li>
+      <li><b>Publication records</b> — which video was sent to which platform, when, the
+        resulting platform identifier (such as a TikTok <code>publish_id</code>), and any error
+        returned.</li>
+      <li><b>TikTok account data</b> — when the operator connects a TikTok account, the App
+        stores the access token, the refresh token, the account's <code>open_id</code> and the
+        granted permission scopes. Basic profile information (display name, username, avatar
+        URL) may be requested to show which account is connected; it is not written to disk.</li>
+      <li><b>Google/YouTube account data</b> — an OAuth token for the operator's own YouTube
+        channel, when that integration is used.</li>
+    </ul>
+  </div>
+  <p>All of this is stored locally: content and records in a SQLite database file, tokens in a
+  separate file readable only by the account running the App (file permissions <code>0600</code>).
+  Tokens are never displayed in the interface, never written to logs, and never returned by the
+  App's own API.</p>
+
+  <h2>3. What the App sends to TikTok</h2>
+  <p>When the operator clicks "Publish to TikTok", the App sends to TikTok's official Content
+  Posting API: the video file itself, the title and hashtags the operator wrote, the chosen
+  privacy level, interaction settings (comment/duet/stitch), and a declaration that the content
+  is AI-generated. Nothing else is transmitted.</p>
+
+  <h2>4. What the App does not do</h2>
+  <ul>
+    <li>It does not sell, rent, or share any data with third parties.</li>
+    <li>It does not run analytics, advertising, or tracking of any kind.</li>
+    <li>It does not collect data about TikTok users other than the connected account owner.</li>
+    <li>It does not read, download, or store other people's TikTok content.</li>
+    <li>It does not transmit data to the App's developer.</li>
+  </ul>
+
+  <h2>5. Permissions requested from TikTok</h2>
+  <ul>
+    <li><code>user.info.basic</code> — to identify and display the connected account so the
+      operator can confirm they are posting to the right place.</li>
+    <li><code>video.publish</code> — to post the operator's own approved videos to that
+      account.</li>
+  </ul>
+  <p>These permissions are used for those purposes only. Access applies solely to the account
+  that granted it.</p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>Data stays on the operator's machine until the operator deletes it. TikTok tokens can be
+  deleted at any time from the App's settings screen ("Disconnect"), which removes the stored
+  token file. Access can also be revoked from the TikTok app under Settings &rarr; Security &amp;
+  permissions &rarr; Manage app permissions. Deleting the App's data directory removes
+  everything the App holds.</p>
+
+  <h2>7. Security</h2>
+  <p>Tokens are stored with restricted file permissions and are never exposed through the
+  interface or logs. All communication with TikTok and Google uses HTTPS. Because the App is
+  self-hosted, the security of the underlying machine is the operator's responsibility.</p>
+
+  <h2>8. Children</h2>
+  <p>The App is not directed at children and is not intended for use by anyone under the minimum
+  age required by the platforms it connects to.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, the updated version will be published at this URL with a new
+  "last updated" date.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy:
+    <a href="mailto:kkxaiko99@gmail.com">kkxaiko99@gmail.com</a>.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</div>
+</body>
+</html>

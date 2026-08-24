@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/tiktokfIzUctBL0y7Q76Jdll0JoIiehRDIxt3O(.*)",
+      "dest": "/tiktokfIzUctBL0y7Q76Jdll0JoIiehRDIxt3O.txt"
+    }
+  ]
+}

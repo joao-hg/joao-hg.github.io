@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="tiktok-developers-site-verification" content="fIzUctBL0y7Q76Jdll0JoIiehRDIxt3O">
+<meta name="tiktok-developers-site-verification" content="tiktok-developers-site-verification=fIzUctBL0y7Q76Jdll0JoIiehRDIxt3O">
+<title>Shorts Factory</title>
+<link rel="icon" href="assets/app-icon.svg">
+<style>
+  :root{--bg:#0b0b0f;--card:#121218;--bd:#24242e;--tx:#e8e8ef;--mut:#9a9aa8;--ac:#ff6a5f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:3rem 1.25rem 4rem}
+  header{display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem}
+  header img{width:64px;height:64px;border-radius:16px}
+  h1{font-size:1.6rem;margin:0}
+  .sub{color:var(--mut);margin:.2rem 0 0;font-size:.95rem}
+  h2{font-size:1.1rem;margin:2.2rem 0 .6rem}
+  p{color:#c9c9d4}
+  ul{color:#c9c9d4;padding-left:1.2rem}
+  li{margin:.35rem 0}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:1.1rem 1.25rem;margin:1.2rem 0}
+  a{color:var(--ac)}
+  footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.88rem}
+  footer a{margin-right:1.1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/app-icon.svg" alt="Shorts Factory">
+    <div>
+      <h1>Shorts Factory</h1>
+      <p class="sub">A self-hosted studio for producing and publishing your own short videos.</p>
+    </div>
+  </header>
+
+  <p>Shorts Factory is a private, self-hosted application that a single creator runs on
+  their own machine. It drafts short-form video ideas and scripts, generates narration and
+  subtitles, assembles the final video, and — after the creator reviews and approves it —
+  publishes that video to the creator's own connected accounts.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li><b>Produce.</b> The app writes a script, records narration, generates subtitles and
+      renders a vertical video.</li>
+    <li><b>Review.</b> Every video lands in an approval queue. Nothing is published without
+      the operator explicitly approving it in the dashboard.</li>
+    <li><b>Publish.</b> Approved videos are uploaded to the creator's own YouTube channel
+      and/or TikTok account through the platforms' official APIs.</li>
+  </ul>
+
+  <h2>TikTok integration</h2>
+  <div class="card">
+    <p style="margin-top:0">Shorts Factory connects to TikTok using <b>Login Kit</b> and the
+    <b>Content Posting API</b>. The creator authorizes their own account and grants two
+    permissions:</p>
+    <ul>
+      <li><code>user.info.basic</code> — to show which account is connected.</li>
+      <li><code>video.publish</code> — to post the creator's own approved videos.</li>
+    </ul>
+    <p style="margin-bottom:0">Videos are only posted to the account that granted access, and
+    only when the operator clicks <b>Publish to TikTok</b>. Videos shorter than one minute are
+    rejected before upload. Content produced by the app is declared as AI-generated.</p>
+  </div>
+
+  <h2>Who it is for</h2>
+  <p>A single creator managing their own channels. The app is not a multi-user service, has no
+  public sign-up, and does not act on behalf of anyone other than the person running it.</p>
+
+  <footer>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <span>Contact: <a href="mailto:kkxaiko99@gmail.com">kkxaiko99@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
